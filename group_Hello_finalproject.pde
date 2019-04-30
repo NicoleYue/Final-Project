@@ -3,6 +3,10 @@ PImage map1;
 PImage house;
 PImage[] idle = new PImage[4];
 PImage[] run = new PImage[6];
+PImage[] runLeft = new PImage[6];
+PImage[] putswrd = new PImage[3];
+PImage[] jump = new PImage[7];
+
 int gameWidth;
 int gameHeight;
 Player p1;
@@ -24,6 +28,16 @@ void setup() {
   run[3] = loadImage("run3.png");
   run[4] = loadImage("run4.png");
   run[5] = loadImage("run5.png");
+  putswrd[0] = loadImage("putswrd0.png");
+  putswrd[1] = loadImage("putswrd1.png");
+  putswrd[2] = loadImage("putswrd2.png");
+  jump[0] = loadImage("jump0.png");
+  jump[1] = loadImage("jump1.png");
+  jump[2] = loadImage("jump2.png");
+  jump[3] = loadImage("jump2.png");
+  jump[4] = loadImage("jump2.png");
+  jump[5] = loadImage("jump3.png");
+  jump[6] = loadImage("jump3.png");
   gameover = true;
   p1 = new Player(100,345);
 }
